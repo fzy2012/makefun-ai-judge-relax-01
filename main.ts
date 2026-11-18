@@ -3,7 +3,19 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-const TEXT = `You are sitting by the window at the end of the day. Rain is falling, slow, on the glass, and the light in the room has gone the colour of honey. There is a cup beside you, still warm. Nothing is waiting. No message is coming in, no queue is filling up, no meter is running, and no one is counting the seconds you take. The rain keeps its own time, one drop and then another, and the street outside is quiet enough to hear it. Stay a little longer. The cup will cool, the light will fade, and that is all that will happen. The evening asks nothing of you. It only keeps the chair warm, and the rain keeps falling, and you can stay exactly where you are.`;
+const TEXT = `You are in bed, and the lamp is low, and your mother is reading to you from the book with the blue cover.
+
+Her voice goes along, steady as a hand on your back, one word and then the next. The words are the ones you know, and they come in the order you know.
+
+After a while the words leave more room between them. A sentence. A while. A sentence. Her voice is getting lower, and slower, and it does not hurry the story along. The pages turn slower. One page. A while. Another.
+
+Once, her finger leaves the page and smooths your hair back, the way you settle a blanket. Then the page again. A sentence. A longer while. A sentence.
+
+The lamp is warm on the wall. The house is quiet below, and the night is quiet above, and there is nothing left in the day that needs doing.
+
+Her voice trails off in the middle of a sentence, and stops. The book rests open on her knee.
+
+You are asleep before the sentence ends, so for you it goes on, in the dark, in her voice, and it does not need to finish tonight.`;
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 mkdirSync(outDir, { recursive: true });
